@@ -1,0 +1,34 @@
+{
+  "name": "qa-perf-master",
+  "version": "1.0.0",
+  "author": "qa.accounts@redacreltd.com",
+  "scripts": {
+    "build": "rimraf dist && npx webpack",
+    "watch": "webpack --watch",
+    "lint": "eslint '**/*.ts'",
+    "lint:fix": "eslint '**/*.ts' --fix"
+  },
+  "devDependencies": {
+    "@babel/core": "7.13.16",
+    "@babel/plugin-proposal-class-properties": "7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.13.8",
+    "@babel/preset-env": "7.13.15",
+    "@babel/preset-typescript": "7.13.0",
+    "@types/k6": "~0.45.0",
+    "@types/totp-generator": "^0.0.6",
+    "@types/webpack": "5.28.0",
+    "babel-loader": "8.2.2",
+    "clean-webpack-plugin": "4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "totp-generator": "^0.0.14",
+    "typescript": "4.2.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-glob-entries": "^1.0.1"
+  },
+  "dependencies": {
+    "dotenv-webpack": "^8.0.1",
+    "node-polyfill-webpack-plugin": "^2.0.1"
+  }
+}

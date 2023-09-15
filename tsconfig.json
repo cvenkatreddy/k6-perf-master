@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "noEmit": true,
+    "allowJs": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "*": ["src/*"],
+      "@k6/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/global.d.ts", "src/**/*.ts", "src/@types/generated.d.ts"]
+}
