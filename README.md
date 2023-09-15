@@ -1,10 +1,10 @@
-# Load Testing API-V2 Service Using K6
+# Load Testing Using K6
 
-This project is aimed to run load test on API-V2 Services. in this project K6 library used to send parallelized HTTP requests to the services and simulate number of users on those requests to recognize bottleneck of the whole project with visual graphs that K6 will generate.
+This project is aimed to run load test on BE endpoints. in this project K6 library used to send parallelized HTTP requests to the services and simulate number of users on those requests to recognize bottleneck of the whole project with visual graphs that K6 will generate.
 
 ## Table of contents:
 
-- [Load Testing API-V2 Service Using K6](#load-testing-api-v2-service-using-k6)
+- [Load Testing Using K6](#load-testing-using-k6)
   - [Table of contents:](#table-of-contents)
   - [Pre-prerequisites](#pre-prerequisites)
     - [`.env` file](#env-file)
@@ -63,7 +63,7 @@ The folder structure is explained below:
 - Install packages `npm i`
 - Run `npm run build`.
 - Run test locally Execute `k6 run ./dist/src/apiv2/login-authentication.js`
-- Run to upload results to k6cloud `K6_CLOUD_TOKEN=852ce20ea0df9c971b50cd694046c115ceb4118c70d8df99eb06f10f46fb5c3d k6 cloud ./dist/src/apiv2/login-authentication.js   `
+- Run to upload results to k6cloud `K6_CLOUD_TOKEN=<projectId on k6> k6 cloud ./dist/src/apiv2/login-authentication.js`
 
 ## How to write load tests
 
